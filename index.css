@@ -1,0 +1,127 @@
+body {
+    font-family: Futura;
+    color: black;
+    background-image: linear-gradient(to right top, #d9e4ad, #e9fd97);
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(/Futura/futur.ttf);
+}
+
+div.title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+div.display-el {
+    background-image: linear-gradient(to right, #FFFFFF, #EFEFEF);
+    width: 84%;
+    height: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+}
+
+div.display-el:hover {
+    box-shadow: 0px 4px black;
+}
+
+#expression{
+    color: rgb(211, 211, 211);
+    font-size: 12px;
+}
+
+div.grid-container.digits {
+    float: left;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 65px 65px 65px;
+    grid-template-rows: 65px 65px 65px 65px;
+    gap: 10px;
+}
+
+button.grid-item.digit-btn {
+    background-color: #B18585;
+    border: none;
+    font-family: Futura;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+button.grid-item.digit-btn:hover {
+    background-color: #9c2f2f;
+}
+
+button.grid-item.erase-btn {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: #7a4c4c;
+    border: none;
+    font-family: Futura;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+button.grid-item.erase-btn:hover {
+    background-color: #9c2f2f;
+}
+
+div.grid-container.operations {
+    display: grid;
+    grid-template-columns: 65px 65px 65px;
+    grid-template-rows: 65px 65px 65px 65px;
+    gap: 10px;
+    float: right;
+    margin-right: 20px;
+}
+
+button.grid-item.operation-btn {
+    background-color: #889BCE;
+    border: none;
+    font-family: Futura;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+button.grid-item.operation-btn:hover {
+    background-color: #5a79ce;
+}
+
+button.grid-item.operation-btn.sqrt-btn {
+    background-color: #889BCE;
+    border: none;
+    font-family: Futura;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+button.grid-item.operation-btn.sqrt-btn:hover {
+    background-color: #5a79ce;
+}
+
+button.grid-item.operation-btn.result-btn {
+    background-color: #cd6557;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+button.grid-item.operation-btn.result-btn:hover {
+    background-color: #c49e99;
+}
+
+#actual-expression {
+    margin-top: -8px;
+    color: black;
+    font-size: 30px;
+}
